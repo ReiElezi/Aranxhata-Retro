@@ -1,0 +1,451 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(100deg, #616161, #000000);
+    margin: 0;
+    font-family: "Pixelify Sans", sans-serif;
+    color: #fff;
+    transition: filter 0.3s;
+}
+
+.start-btn {
+    text-align: center;
+    display: inline-block;
+    margin: 7px;
+    font-size: 32px;
+    padding: 10px 35px 10px 35px;
+    background-color: lightgray;
+    text-shadow: -1px -1px black, 1px 1px white;
+    color: gray;
+    border-radius: 7px;
+    box-shadow: 0 .2em gray;
+    cursor: pointer;
+    font-weight: 600;
+}
+.start-btn:active {
+    box-shadow: none;
+    position: relative; 
+    top: .2em;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-size: 24px;
+}
+
+nav li {
+    margin-right: 15px;
+}
+
+i {
+    color: #df109e;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #00FF00;
+    font-weight: 600;
+    padding: 10px 15px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #df109e;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+nav .logo {
+    font-size: 35px;
+    color: #00FF00;
+    font-weight: bold;
+    margin-left: 45px;
+}
+
+.color-red {
+    color: rgb(187 4 4);
+}
+
+.color-green {
+    color: #00FF00;
+}
+
+.color-pink {
+    color: #df109e;
+}
+
+.main-content {
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+.arexhata-logo {
+    width: 100%;
+    height: 750px;
+}
+
+i:hover {
+    color: rgb(187 4 4);
+}
+
+h2 {
+    color: #00FF00;
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.logo-images {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.rrjeshta {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.card {
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s;
+    width: 500px;
+    text-align: center;
+    margin: 10px;
+}
+
+.card img {
+    width: 100%;
+    border-bottom: 1px solid #444;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-title {
+    padding: 15px;
+    color: #00FF00;
+    font-weight: 600;
+    font-size: 26px;
+}
+.card-title:hover{
+    color: #df109e;
+    transition: .4s ease;
+    cursor: pointer;
+}
+.form-container{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.lock-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70%;
+    background: rgba(0, 0, 0, 0.5);
+    background-image: url('/css.css/lock-icon.png');
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.lock-overlay1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70%;
+    background: rgba(0, 0, 0, 0.5);
+    background-image: url('/css.css/lock-icon.png');
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.card:hover .lock-overlay {
+    opacity: 1;
+}
+
+.lock-text {
+    font-size: 18px;
+    color: #ff0000;
+    font-weight: bold;
+    margin: 0;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.card:hover .lock-text {
+    opacity: 1;
+}
+
+label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-family: "Pixelify Sans", sans-serif;
+}
+
+.start-btn {
+    text-align: center;
+    display: inline-block;
+    margin: 7px;
+    font-size: 32px;
+    padding: 10px 35px;
+    background-color: lightgray;
+    text-shadow: -1px -1px black, 1px 1px white;
+    color: gray;
+    border-radius: 7px;
+    box-shadow: 0 .2em gray;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.start-btn:active {
+    box-shadow: none;
+    position: relative; 
+    top: .2em;
+}
+footer {
+    width: 100%;
+    background: linear-gradient(100deg, #414141, #000000);
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+footer .social-links {
+    margin: 10px 0;
+}
+
+footer .social-links a {
+    color: #fff;
+    margin: 0 20px;
+    font-size: 34px;
+    transition: color 0.3s;
+}
+
+footer p {
+    max-width: 600px;
+    margin: 10px 20px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.footer-logo {
+    font-size: 35px;
+    color: #00FF00;
+    font-weight: bold;
+    margin: 25px;
+}
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li {
+    padding: 10px;
+    color: #333;
+    cursor: pointer;
+}
+
+.dropdown-menu li:hover {
+    background-color: #f0f0f0;
+}
+
+
+/* Videos */
+
+.video-1{
+    position: absolute;
+    top:15%;
+    height: 80%;
+}
+.video-link{
+    text-decoration: none;
+}
+
+.card-1 {
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s;
+    width: 500px;
+    text-align: center;
+    margin: 10px;
+}
+
+
+/* 8 ball eksperiment */
+
+.card-1 img {
+    width: 100%;
+    border-bottom: 1px solid #444;
+}
+
+.card-1:hover {
+    transform: scale(1.05);
+}
+
+.card-title-1 {
+    padding: 15px;
+    color: #00FF00;
+    font-weight: 600;
+    font-size: 26px;
+}
+.card-title-1:hover{
+    color: #df109e;
+    transition: .4s ease;
+    cursor: pointer;
+}
+.lock-overlay-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70%;
+    background: rgba(0, 0, 0, 0.5);
+    background-image: url('/css.css/lock-icon.png');
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.card-1:hover .lock-overlay-1 {
+    opacity: 1;
+}
+
+.lock-text-1 {
+    font-size: 18px;
+    color: #ff0000;
+    font-weight: bold;
+    margin: 0;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.card-1:hover .lock-text-1 {
+    opacity: 1;
+}
+.lock-overlay-1 {
+    display: none; /* Hiqja e kycit */
+}
+
+.all-container-footer{
+    display: flex;
+    gap: 80px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 90px;
+}
+.card-container {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    width: 300px;
+    background-color: lightgray;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card-container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-image {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h2 {
+    font-size: 24px;
+    margin: 0 0 10px;
+    color: #333;
+}
+
+.card-content p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+}
+.color-greeen{
+    color: green;
+}

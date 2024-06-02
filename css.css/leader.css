@@ -1,0 +1,195 @@
+body {
+    background: url('super_mario_background.png') no-repeat center center fixed;
+    background-size: cover;
+
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: filter 0.3s;
+        background: linear-gradient(100deg, #616161, #000000);
+        font-family: "Pixelify Sans", sans-serif;
+}
+
+
+.start-btn {
+    text-align: center;
+    display: inline-block;
+    margin: 7px;
+    font-size: 32px;
+    padding: 10px 35px 10px 35px;
+    background-color: lightgray;
+    text-shadow: -1px -1px black, 1px 1px white;
+    color: gray;
+    border-radius: 7px;
+    box-shadow: 0 .2em gray;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.start-btn:active {
+    box-shadow: none;
+    position: relative;
+    top: .2em;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-size: 24px;
+}
+
+nav li {
+    margin-right: 15px;
+}
+
+i {
+    color: #df109e;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #00FF00;
+    font-weight: 600;
+    padding: 10px 15px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #df109e;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+nav .logo {
+    font-size: 35px;
+    color: #00FF00;
+    font-weight: bold;
+    margin-left: 45px;
+}
+
+.leaderboard {
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 5px solid #ffcc00;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 50px;
+    padding: 20px;
+    width: 60%;
+}
+
+h1 {
+    color: #ffcc00;
+    font-size: 2em;
+    margin: 0;
+    padding: 20px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 2px solid #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #ffcc00;
+    color: #000;
+}
+
+td {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.container {
+    width: 80%;
+    text-align: center;
+}
+
+.animated-hr {
+    border: none;
+    height: 4px;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    position: relative;
+    overflow: hidden;
+    width: 0;
+    /* Initially set to 0 to animate from 0 to 100% */
+    animation: animateHR 3s ease-in-out infinite, changeColor 5s ease-in-out infinite;
+}
+
+@keyframes animateHR {
+    0% {
+        width: 0;
+    }
+
+    50% {
+        width: 100%;
+    }
+
+    100% {
+        width: 0;
+    }
+    
+}
+
+@keyframes changeColor {
+    0% {
+        background: linear-gradient(to right, #ff7e5f, #feb47b);
+    }
+
+    33% {
+        background: linear-gradient(to right, #6a11cb, #2575fc);
+    }
+
+    66% {
+        background: linear-gradient(to right, #43e97b, #38f9d7);
+    }
+
+    100% {
+        background: linear-gradient(to right, #ff7e5f, #feb47b);
+    }
+}
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li {
+    padding: 10px;
+    color: #333;
+    cursor: pointer;
+}
+
+.dropdown-menu li:hover {
+    background-color: #f0f0f0;
+}
